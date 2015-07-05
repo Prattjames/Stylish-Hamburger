@@ -1,0 +1,84 @@
+html {
+  background-color: lightblue;
+  height: 100%; }
+
+body {
+  height: 100%; }
+  body a {
+    display: block;
+    width: 35px; }
+    body a .ham {
+      width: 35px;
+      margin-top: 20px;
+      margin-left: 15px;
+      padding-top: 10px;
+      height: 20px;
+      -webkit-transition: all 0.4s 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      body a .ham div {
+        background-color: #fff;
+        width: 35px;
+        height: 6px;
+        display: block;
+        position: relative;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+        body a .ham div::before, body a .ham div::after {
+          content: '';
+          display: block;
+          width: 35px;
+          height: 6px;
+          background-color: #fff;
+          -webkit-transition: all 0.4s 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+        body a .ham div::before {
+          margin-bottom: 5px;
+          position: absolute;
+          top: -10px; }
+        body a .ham div::after {
+          margin-top: 5px;
+          position: absolute;
+          bottom: -10px; }
+
+.close {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .close div {
+    background: none !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .close div::before, .close div:after {
+      top: 0px !important;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .close div::before {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .close div::after {
+      top: -5px !important;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .close:hover {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+    .close:hover div::after {
+      background: none !important; }
+
+@keyframes open {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+
+/*# sourceMappingURL=style.css.map */
