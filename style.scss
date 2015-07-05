@@ -5,13 +5,25 @@ html {
 
 body {
 	height: 100%;
+	padding: 0;
+	margin: 0;
 
+  .menu {
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    width: 300px;
+    background-color: turquoise;
+    left: -300px;
+  }
+  
 	a {
 		display: block;
 		width: 35px;
+    padding-top: 20px;
+    
 		.ham {
 			width: 35px;
-			margin-top: 20px;
 			margin-left: 15px;
 			padding-top: 10px;
 			height: 20px;
@@ -74,39 +86,50 @@ body {
 
 .close {
 	-webkit-transition: all 0.1s ease-in-out; 
-    transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 	div {
 		background: none !important;
 		-webkit-transition: all 0.2s ease-in-out; 
-      	transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 		&::before, &:after {
 			top: 0px !important;
 			margin: 0;
 			padding: 0;
 			-webkit-transition: all 0.2s ease-in-out; 
-      		transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 		}
 	    &::before {
 	      -webkit-transform: rotate(-45deg); 
 	      -ms-transform: rotate(-45deg); 
 	      transform: rotate(-45deg);
+        -webkit-transition: all 0.1s ease-in-out; 
+        transition: all 0.1s ease-in-out;
 	    }
 	    &::after {
 	    	top: -5px !important;
 	      -webkit-transform: rotate(45deg); 
 	      -ms-transform: rotate(45deg); 
 	      transform: rotate(45deg);
+        -webkit-transition: all 0.1s ease-in-out; 
+        transition: all 0.1s ease-in-out;
 	    }
 	}
 	&:hover {
-		-webkit-transition: all 0.1s ease-in-out; 
-      	transition: all 0.1s ease-in-out;
-      	-webkit-transform: rotate(45deg); 
-	    -ms-transform: rotate(45deg); 
-	    transform: rotate(45deg);
 	    div {
+        &::before {
+          -webkit-transform: rotate(0deg) !important; 
+	        -ms-transform: rotate(0deg) !important; 
+	        transform: rotate(0deg) !important;
+          -webkit-transition: all 0.1s ease-in-out; 
+          transition: all 0.1s ease-in-out;
+        }
 	    	&::after {
-	    		background: none !important;
+          -webkit-transition: all 0.1s ease-in-out; 
+      	  transition: all 0.1s ease-in-out;
+      	-webkit-transform: rotate(0deg) !important; 
+	      -ms-transform: rotate(0deg) !important; 
+	      transform: rotate(0deg) !important;
+	    		//background: none !important;
 	    	}
 		}
 	}

@@ -3,13 +3,22 @@ html {
   height: 100%; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+  body .menu {
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    width: 300px;
+    background-color: turquoise;
+    left: -300px; }
   body a {
     display: block;
-    width: 35px; }
+    width: 35px;
+    padding-top: 20px; }
     body a .ham {
       width: 35px;
-      margin-top: 20px;
       margin-left: 15px;
       padding-top: 10px;
       height: 20px;
@@ -70,19 +79,27 @@ body {
     .close div::before {
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+      transform: rotate(-45deg);
+      -webkit-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
     .close div::after {
       top: -5px !important;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
-  .close:hover {
+      transform: rotate(45deg);
+      -webkit-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+  .close:hover div::before {
+    -webkit-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+  .close:hover div::after {
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
-    .close:hover div::after {
-      background: none !important; }
+    -webkit-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important; }
 
 /*# sourceMappingURL=style.css.map */
