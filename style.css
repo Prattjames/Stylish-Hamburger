@@ -1,11 +1,13 @@
 html {
   background-color: lightblue;
-  height: 100%; }
-
-body {
   height: 100%;
   padding: 0;
   margin: 0; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
   body .menu {
     padding: 0;
     height: 100%;
@@ -16,7 +18,8 @@ body {
   body a {
     display: block;
     width: 35px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    text-decoration: none; }
     body a .ham {
       width: 35px;
       margin-left: 15px;
@@ -24,6 +27,13 @@ body {
       height: 20px;
       -webkit-transition: all 0.4s 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
+      body a .ham p {
+        color: white;
+        display: block;
+        margin-left: 40px;
+        background-color: black;
+        position: relative;
+        top: -27px; }
       body a .ham div {
         background-color: #fff;
         width: 35px;

@@ -1,12 +1,14 @@
 html {
 	background-color: lightblue;
 	height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 body {
 	height: 100%;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
   .menu {
     padding: 0;
@@ -21,6 +23,7 @@ body {
 		display: block;
 		width: 35px;
     padding-top: 20px;
+    text-decoration: none;
     
 		.ham {
 			width: 35px;
@@ -29,6 +32,15 @@ body {
 			height: 20px;
 			-webkit-transition: all 0.4s 0.2s ease-in-out; 
       		transition: all 0.2s ease-in-out;
+      
+      p {
+        color: white;
+        display: block;
+        margin-left: 40px;
+        background-color: black;
+        position: relative;
+        top: -27px;
+      }
 
 			div {
 				background-color: #fff;
