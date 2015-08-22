@@ -1,14 +1,12 @@
+$easing: cubic-bezier(.25,1.7,.35,.8);
+
 html {
 	background-color: lightblue;
 	height: 100%;
-	padding: 0;
-	margin: 0;
 }
 
 body {
 	height: 100%;
-	margin: 0;
-	padding: 0;
 
   .menu {
     padding: 0;
@@ -30,8 +28,8 @@ body {
 			margin-left: 15px;
 			padding-top: 10px;
 			height: 20px;
-			-webkit-transition: all 0.4s 0.2s ease-in-out; 
-      		transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.4s 0.5s $easing; 
+      		transition: all 0.5s $easing;
       
       p {
         color: white;
@@ -48,8 +46,8 @@ body {
 				height: 6px;
 				display: block;
 				position: relative;
-				-webkit-transition: all 0.4s 0.2s ease-in-out; 
-      			transition: all 0.2s ease-in-out;
+				-webkit-transition: all 0.4s 0.5s $easing; 
+      			transition: all 0.5s $easing;
 
 				&::before, &::after {
 					content: '';
@@ -57,8 +55,8 @@ body {
 					width: 35px;
 					height: 6px;
 					background-color: #fff;
-					-webkit-transition: all 0.4s 0.2s ease-in-out; 
-      				transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.4s 0.5s $easing; 
+      				transition: all 0.5s $easing;
 				}
 
 				&::before {
@@ -76,14 +74,14 @@ body {
 			&:hover {
 				div {
 					background: none !important;
-					-webkit-transition: all 0.2s ease-in-out; 
-			      	transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.5s $easing; 
+			      	transition: all 0.5s $easing;
 					&::before, &:after {
 						top: 0px !important;
 						margin: 0;
 						padding: 0;
-						-webkit-transition: all 0.2s ease-in-out; 
-			      		transition: all 0.2s ease-in-out;
+						-webkit-transition: all 0.5s $easing; 
+			      		transition: all 0.5s $easing;
 					}
 				    &::after {
 				   		-webkit-transform: rotate(-90deg); 
@@ -97,33 +95,33 @@ body {
 }
 
 .close {
-	-webkit-transition: all 0.1s ease-in-out; 
-  transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s $easing; 
+  transition: all 0.1s $easing;
 	div {
 		background: none !important;
-		-webkit-transition: all 0.2s ease-in-out; 
-    transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.5s $easing; 
+    transition: all 0.5s $easing;
 		&::before, &:after {
 			top: 0px !important;
 			margin: 0;
 			padding: 0;
-			-webkit-transition: all 0.2s ease-in-out; 
-      transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.5s $easing; 
+      transition: all 0.5s $easing;
 		}
 	    &::before {
 	      -webkit-transform: rotate(-45deg); 
 	      -ms-transform: rotate(-45deg); 
 	      transform: rotate(-45deg);
-        -webkit-transition: all 0.1s ease-in-out; 
-        transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s $easing; 
+        transition: all 0.1s $easing;
 	    }
 	    &::after {
 	    	top: -5px !important;
 	      -webkit-transform: rotate(45deg); 
 	      -ms-transform: rotate(45deg); 
 	      transform: rotate(45deg);
-        -webkit-transition: all 0.1s ease-in-out; 
-        transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s $easing; 
+        transition: all 0.1s $easing;
 	    }
 	}
 	&:hover {
@@ -132,12 +130,12 @@ body {
           -webkit-transform: rotate(0deg) !important; 
 	        -ms-transform: rotate(0deg) !important; 
 	        transform: rotate(0deg) !important;
-          -webkit-transition: all 0.1s ease-in-out; 
-          transition: all 0.1s ease-in-out;
+          -webkit-transition: all 0.1s $easing; 
+          transition: all 0.1s $easing;
         }
 	    	&::after {
-          -webkit-transition: all 0.1s ease-in-out; 
-      	  transition: all 0.1s ease-in-out;
+          -webkit-transition: all 0.1s $easing; 
+      	  transition: all 0.1s $easing;
       	-webkit-transform: rotate(0deg) !important; 
 	      -ms-transform: rotate(0deg) !important; 
 	      transform: rotate(0deg) !important;

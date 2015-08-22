@@ -5,14 +5,14 @@ $(document).ready(function () {
       $('.menu').animate({
         left: '0px'
       }, 500);
-      $('.button').animate({
+      $('body').animate({
         marginLeft: '300px'
       }, 500);
     } else {
       $('.menu').animate({
         left: '-300px'
       }, 500);
-      $('.button').animate({
+      $('body').animate({
         marginLeft: '0px'
       }, 500);
     }

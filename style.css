@@ -1,13 +1,9 @@
 html {
   background-color: lightblue;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
+  height: 100%; }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
+  height: 100%; }
   body .menu {
     padding: 0;
     height: 100%;
@@ -25,8 +21,8 @@ body {
       margin-left: 15px;
       padding-top: 10px;
       height: 20px;
-      -webkit-transition: all 0.4s 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
+      -webkit-transition: all 0.4s 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+      transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
       body a .ham p {
         color: white;
         display: block;
@@ -40,16 +36,16 @@ body {
         height: 6px;
         display: block;
         position: relative;
-        -webkit-transition: all 0.4s 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out; }
+        -webkit-transition: all 0.4s 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+        transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
         body a .ham div::before, body a .ham div::after {
           content: '';
           display: block;
           width: 35px;
           height: 6px;
           background-color: #fff;
-          -webkit-transition: all 0.4s 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+          -webkit-transition: all 0.4s 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+          transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
         body a .ham div::before {
           margin-bottom: 5px;
           position: absolute;
@@ -60,54 +56,54 @@ body {
           bottom: -10px; }
       body a .ham:hover div {
         background: none !important;
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out; }
+        -webkit-transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+        transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
         body a .ham:hover div::before, body a .ham:hover div:after {
           top: 0px !important;
           margin: 0;
           padding: 0;
-          -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+          -webkit-transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+          transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
         body a .ham:hover div::after {
           -webkit-transform: rotate(-90deg);
           -ms-transform: rotate(-90deg);
           transform: rotate(-90deg); }
 
 .close {
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
+  -webkit-transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
   .close div {
     background: none !important;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
     .close div::before, .close div:after {
       top: 0px !important;
       margin: 0;
       padding: 0;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
+      -webkit-transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+      transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
     .close div::before {
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
-      -webkit-transition: all 0.1s ease-in-out;
-      transition: all 0.1s ease-in-out; }
+      -webkit-transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+      transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
     .close div::after {
       top: -5px !important;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      -webkit-transition: all 0.1s ease-in-out;
-      transition: all 0.1s ease-in-out; }
+      -webkit-transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+      transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
   .close:hover div::before {
     -webkit-transform: rotate(0deg) !important;
     -ms-transform: rotate(0deg) !important;
     transform: rotate(0deg) !important;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out; }
+    -webkit-transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8); }
   .close:hover div::after {
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    transition: all 0.1s cubic-bezier(0.25, 1.7, 0.35, 0.8);
     -webkit-transform: rotate(0deg) !important;
     -ms-transform: rotate(0deg) !important;
     transform: rotate(0deg) !important; }
