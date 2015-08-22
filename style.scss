@@ -8,6 +8,8 @@ html {
 body {
 	height: 100%;
 
+
+// THE MENU
   .menu {
     padding: 0;
     height: 100%;
@@ -20,9 +22,9 @@ body {
 	a {
 		display: block;
 		width: 35px;
-    padding-top: 20px;
-    text-decoration: none;
-    
+    	padding-top: 20px;
+    	text-decoration: none;
+    // THE HAMBURGER
 		.ham {
 			width: 35px;
 			margin-left: 15px;
@@ -94,6 +96,8 @@ body {
 	}
 }
 
+// HELPER TO CLOSE THE MENU
+
 .close {
 	-webkit-transition: all 0.1s $easing; 
   transition: all 0.1s $easing;
@@ -139,7 +143,6 @@ body {
       	-webkit-transform: rotate(0deg) !important; 
 	      -ms-transform: rotate(0deg) !important; 
 	      transform: rotate(0deg) !important;
-	    		//background: none !important;
 	    	}
 		}
 	}
